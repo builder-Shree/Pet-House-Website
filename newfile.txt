@@ -1,0 +1,38 @@
+What is the purpose of html head element?
+The head tag includes the crucial information about the page which the search engine and the browser will 
+access to optimize the web page .These information are not directly access by the user and not displayed on
+the web page.
+
+How do you create a hyperlink in html ?Give an example.
+<a href="www.google.com">Google</a>
+
+What is the purpose of the HTML <img> element? How do you specify the image source?
+The html <img> tag is used to embed image in the web page.
+
+<img src="dog.jpg" alt="A dog img">A Dog 
+
+
+
+By using semantic elements like <header>, <nav>, and <h1>, you're providing meaningful structure to your webpage, which can enhance both its accessibility and its search engine optimization (SEO) capabilities.
+
+
+What is the purpose of the HTML <form> element? Explain its basic structure.
+
+The html form element is used to submit user data to a specific address provided.For example if a user fills 
+a registration form of a certain place or oraganisation then after clicking the submit button the <form> tag is used to submit the data of that user at ht especific address.
+
+<form action="form.php">
+<label>First Name:</label>
+<input type="text" placeholder=Enter your first name" name="first name">
+<button> Submit </button>
+</form>
+
+What is the difference between absolute url and relative url?
+The absolute url is used to redirect to an address outside of the web page.It uses complete https protocol.
+
+The relative url is used to reach to a destination within the web page or structure of directory.
+
+How do you create a table in HTML?
+What elements are used to define the structure of a table?
+Explain the purpose of the rowspan and colspan attributes in HTML tables.
+

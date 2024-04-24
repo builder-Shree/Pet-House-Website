@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="background-image: url(loactebg.jpg);background-size: cover;">
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: antiquewhite;box-shadow: 2px 4px 10px lightgrey;height:127px;width:500px;border-radius: 5px;">
+        <label>Enter Pet Category:</label>
+         <select id="categorySelect">
+            <option>Select Category</option><option value="cat">Cat</option>
+        <option value="dog">Dog</option></select><br>
+        <label>Enter Specific Breed:</label>
+         <select id="breedSelect">
+        <option>Select Breed</option>
+       </select><br>
+       <label>Enter Contact No.</label>
+       <input type="number" name="number" required>
+        <div style="justify-content: center;display: flex;margin-top: 20px;">
+        <button id="btn">Submit</button>
+        </div>
+    </div>
+    </div>
+    <div style="text-align: end;">
+        <a href="index.html"><button style="box-shadow: 2px 4px 8px grey;cursor: pointer;"><i class="fas fa-home"></i>Go to Home Page</button></a>
+        </div>
+</body>
+
+   <script>
+    var categorySelect = document.getElementById("categorySelect");
+    var breedSelect = document.getElementById("breedSelect");
+
+    categorySelect.addEventListener("change", function() {
+        breedSelect.innerHTML = "<option>Select Breed</option>";
+
+        if (categorySelect.value === "dog") {
+            var dogBreeds = ["Beagle", "Pug", "Maltese", "Tibetan Spaniel", "Small English"];
+            dogBreeds.forEach(function(breed) {
+                var option = document.createElement("option");
+                option.text = breed;
+                breedSelect.add(option);
+            });
+        } else if (categorySelect.value === "cat") {
+            var catBreeds = ["American Short Hair", "British Short Hair", "Siamese Cats", "Persian Cats", "Scottish Fold"];
+            catBreeds.forEach(function(breed) {
+                var option = document.createElement("option");
+                option.text = breed;
+                breedSelect.add(option);
+            });
+        }
+    });
+</script>
+<script>
+    var reload=document.getElementById("btn");
+    reload.onclick=function(){
+        location.reload();
+    };
+</script>
+
+</html>

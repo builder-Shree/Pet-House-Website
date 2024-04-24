@@ -1,0 +1,8 @@
+body{
+    background-image: url(galleryback.jpg);
+    background-size: cover;
+}
+img{
+    border:5px solid aliceblue;
+    box-shadow: 2px 4px 8px grey ;
+}
